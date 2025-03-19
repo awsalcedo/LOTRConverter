@@ -24,57 +24,14 @@ struct ExchangeInfo: View {
                     .font(.title3)
                     .padding()
                 
-                HStack{
-                    Image(.goldpiece)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 33)
-                    
-                    Text("1 Gold Piece = 4 Gold Pennies")
-                    Image(.goldpenny)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 33)
-                }
+                ExchangeRate(exchange: "1 Gold Piece = 4 Gold Pennies", leftImage: .goldpiece, rightImage: .goldpenny)
                 
-                HStack{
-                    Image(.goldpenny)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 33)
-                    
-                    Text("1 Gold Penny = 4 Silver Pieces")
-                    Image(.silverpiece)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 33)
-                }
+                ExchangeRate(exchange: "1 Gold Penny = 4 Silver Pieces", leftImage: .goldpenny, rightImage: .silverpiece)
                 
-                HStack{
-                    Image(.silverpiece)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 33)
-                    
-                    Text("1 Silver Piece = 4 Silver Pennies")
-                    Image(.silverpenny)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 33)
-                }
+                ExchangeRate(exchange: "1 Silver Piece = 4 Silver Pennies", leftImage: .silverpiece, rightImage: .silverpenny)
                 
-                HStack{
-                    Image(.silverpenny)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 33)
-                    
-                    Text("1 Silver Penny = 100 Cooper Pennies")
-                    Image(.copperpenny)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 33)
-                }
+                ExchangeRate(exchange: "1 Silver Penny = 100 Copper Pennies", leftImage: .silverpenny, rightImage: .copperpenny)
+                
                 
                 Button {
                     
